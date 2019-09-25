@@ -1,4 +1,7 @@
 module.exports = {
+  outputDir: 'dist', // 打包文件名
+  assetsDir: 'static', // 静态文件夹
+  publicPath: '/', // 公共路径
   devServer: {
     open: true, // 自动打开浏览器
     port: 8087, // 指定端口
