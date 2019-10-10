@@ -13,11 +13,15 @@ export default {
       swiperOption: {
         lazy: true,
         lazyLoading: true,
-        autoplay: true,
+        autoplay: {
+          delay: 3000,
+          stopOnLastSlide: false,
+          disableOnInteraction: true,
+        },
         direction: 'vertical', // 垂直轮播
         // spaceBetween: 45, // slide间距
         slidesPerView: 4, // 显示几个slide，单个slide的高度根据容器总高度自动分配
-        loop: true,
+        // loop: true,
         observer: true,
         speed: 300, // 轮播速度
         setWrapperSize: true,
